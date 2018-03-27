@@ -1,6 +1,6 @@
 # rn-progress-loader
 
-[![NPM version][npm-image]][npm-url]
+[![npm version](https://badge.fury.io/js/rn-progress-loader.svg)](https://badge.fury.io/js/rn-progress-loader)
 [![GPL License][license-image]][license-url]
 
 The React Native Native iOS and Android progress indicator (spinner) which acts like an overlay. 
@@ -79,7 +79,7 @@ GPL
 
 [license-image]: http://img.shields.io/badge/license-GPL-blue.svg?style=flat
 [npm-image]: http://img.shields.io/npm/v/rn-progess-loader.svg?style=flat
-[npm-url]: https://npmjs.org/package/rn-progress-loader
+[npm-url]: https://img.shields.io/badge/npm-v1.0-green.svg
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 [npm-downloads]: http://img.shields.io/npm/anooj1483/rn-progess-loader.svg?style=flat
