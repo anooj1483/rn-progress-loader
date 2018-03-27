@@ -10,6 +10,31 @@
     "type": "git",
     "url": "https://github.com/anooj1483"
   },
+  "keywords": [
+    "progress",
+    "react-native",
+    "rn-progress",
+    "rn-progress-overlay",
+    "overlay","spinner","modal","iphoneX",
+    "activity",
+    "popup",
+    "android",
+    "view",
+    "screen",
+    "indicator",
+    "activity-indicator",
+    "ios",
+    "spinner",
+    "loading","loader","rn-loader",
+    "api-loader",
+    "native",
+    "bar",
+    "progress",
+    "react",
+    "react-native"
+
+
+  ],
   "author": "Anooj Krishnan G <anooj1483@gmail.com>",
   "license": "MIT"
 }

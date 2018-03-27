@@ -55,8 +55,11 @@ class ComponentClass extends React.Component {
             <View
                 style={{backgroundColor: "#06566e", justifyContent: 'center', alignItems: 'center', flex: 1}}>
 
-                <ProgressLoader visible={this.state.visible} isModal={true} isHUD={true} hudColor={"#000000"}
-                                color={"#FFFFFF"}/>
+                <ProgressLoader
+                visible={this.state.visible}
+                isModal={true} isHUD={true}
+                hudColor={"#000000"}
+                color={"#FFFFFF"} />
             </View>
         )
     }
