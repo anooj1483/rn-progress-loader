@@ -1,6 +1,6 @@
 {
   "name": "rn-progress-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The React Native Native iOS and Android progress indicator (spinner) which acts like an overlay. For those who have issues in iPhoneX while using both Modal and ActivityIndicator, I've made it optional",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,10 @@
     "react-native",
     "rn-progress",
     "rn-progress-overlay",
-    "overlay","spinner","modal","iphoneX",
+    "overlay",
+    "spinner",
+    "modal",
+    "iphoneX",
     "activity",
     "popup",
     "android",
@@ -25,15 +28,15 @@
     "activity-indicator",
     "ios",
     "spinner",
-    "loading","loader","rn-loader",
+    "loading",
+    "loader",
+    "rn-loader",
     "api-loader",
     "native",
     "bar",
     "progress",
     "react",
     "react-native"
-
-
   ],
   "author": "Anooj Krishnan G <anooj1483@gmail.com>",
   "license": "MIT"
