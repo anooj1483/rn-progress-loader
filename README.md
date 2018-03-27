@@ -29,7 +29,7 @@ This shows the default properties.
 ```js
 
 import React, { View } from 'react-native';
-import ProgressLoader from 'ProgressLoader'
+import ProgressLoader from 'rn-progress-loader';
 
 class ComponentClass extends React.Component {
 

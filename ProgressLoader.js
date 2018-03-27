@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 
 import {
     StyleSheet,
-    View,
+    View,ActivityIndicator,
     Modal,Text,TouchableHighlight,Dimensions
 } from 'react-native';
 import PropTypes from 'prop-types'
