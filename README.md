@@ -10,8 +10,8 @@ See index.js for example usage
 
 ## Demo
 
-![react-native-smart-loading-spinner-overlay-preview-ios][1]
-![react-native-smart-loading-spinner-overlay-preview-android][2]
+![rn-progress-loader-android][1]
+![rn-progress-loader-ios][2]
 
 
 
