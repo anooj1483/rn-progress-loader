@@ -8,6 +8,13 @@ For those who have issues in iPhoneX while using both Modal and ActivityIndicato
 
 See index.js for example usage
 
+## Demo
+
+![react-native-smart-loading-spinner-overlay-preview-ios][1]
+![react-native-smart-loading-spinner-overlay-preview-android][2]
+
+
+
 ## Install
 ```bash
 npm install --save rn-progress-loader
@@ -83,3 +90,5 @@ GPL
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 [npm-downloads]: http://img.shields.io/npm/anooj1483/rn-progess-loader.svg?style=flat
+[1]: https://github.com/anooj1483/rn-progress-loader/blob/master/demo/iphone_hud.gif
+[2]: https://github.com/anooj1483/rn-progress-loader/blob/master/demo/android_hud.gif
