@@ -16,29 +16,38 @@ const width = Dimensions.get('screen').width;
 
 class ProgressLoader extends React.Component {
 
-     constructor(props) {
-         super(props);
-         this.props = props;
-         this.state = {
-             visible: this.props.visible,
-             isModal:this.props.isModal,
-             barHeight:this.props.barHeight,
+    constructor(props) {
+        super(props);
+        this.props = props;
+        this.state = {
+            visible: this.props.visible,
+            isModal:this.props.isModal,
+            color:this.props.color,
+            barHeight:this.props.barHeight,
+            isHUD:this.props.isHUD,
+            hudColor:this.props.hudColor
 
-         }
-     }
+        }
+    }
 
-     static propTypes = {
-         visible: PropTypes.bool.isRequired,
-         isModal: PropTypes.bool.isRequired,
-         barHeight: PropTypes.number
+    static propTypes = {
+        visible: PropTypes.bool.isRequired,
+        isModal: PropTypes.bool.isRequired,
+        barHeight: PropTypes.number,
+        color:PropTypes.string,
+        hudColor:PropTypes.string,
+        isHUD:PropTypes.bool
 
-     };
+    };
 
-     static defaultProps = {
-         visible: false,
-         isModal:true,
-         barHeight:64
-     };
+    static defaultProps = {
+        visible: false,
+        isModal:true,
+        barHeight:64,
+        color:"#FFFFFF",
+        hudColor:'#FFFFFF',
+        isHUD:false
+    };
 
 
     renderWithModal(){
@@ -50,15 +59,30 @@ class ProgressLoader extends React.Component {
                 visible={this.props.visible}
                 onRequestClose={() => {console.log('close modal')}}>
                 <View style={styles.modalBackground}>
-                    <View style={styles.activityIndicatorWrapper}>
-                        <ActivityIndicator
-                            size="small"
-                            color={"#9b9a99"}
-                            style={{zIndex:100}}
-                            animating={this.props.visible} />
+                    <View style={[styles.activityIndicatorWrapper,{backgroundColor:(this.props.isHUD?(this.props.hudColor):("transparent"))}]}>
+                        {this.renderActivityIndicator()}
                     </View>
                 </View>
             </Modal>
+        )
+    }
+
+    renderActivityIndicator(){
+        const loaderColor = this.props.color;
+        return(
+            this.props.isModal?(
+                <ActivityIndicator
+                    size="small"
+                    color={loaderColor}
+                    style={{zIndex:100}}
+                    animating={this.props.visible} />
+            ):(
+                <ActivityIndicator
+                    size="small"
+                    color={loaderColor}
+                    style={{zIndex:100,marginBottom:this.props.barHeight}}
+                    animating={this.props.visible} />
+            )
         )
     }
 
@@ -67,10 +91,7 @@ class ProgressLoader extends React.Component {
             <View style={{height:(height-this.props.barHeight),width:width,position:'absolute',zIndex:5,
                 justifyContent:'center',alignItems:'center',flex:1,backgroundColor:'rgba(0,0,0,0.3)'}}
             >
-                <ActivityIndicator
-                    size="small"
-                    style={{zIndex:100,marginBottom:this.props.barHeight}}
-                    animating={this.props.visible} />
+                {this.renderActivityIndicator()}
             </View>
         )
     }
