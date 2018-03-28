@@ -12,6 +12,8 @@ See index.js for example usage
 
 ![rn-progress-loader-android][1]
 ![rn-progress-loader-ios][2]
+![rn-progress-loader-android-nohud][3]
+![rn-progress-loader-ios-nohud][4]
 
 
 
@@ -90,5 +92,7 @@ GPL
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 [npm-downloads]: http://img.shields.io/npm/anooj1483/rn-progess-loader.svg?style=flat
-[1]: https://github.com/anooj1483/rn-progress-loader/blob/master/demo/iphone_hud.gif
-[2]: https://github.com/anooj1483/rn-progress-loader/blob/master/demo/android_hud.gif
+[1]: https://github.com/anooj1483/rn-progress-loader/blob/master/demo/iphone_hud.GIF?raw=true
+[2]: https://github.com/anooj1483/rn-progress-loader/blob/master/demo/android_hud.GIF?raw=true
+[3]: https://github.com/anooj1483/rn-progress-loader/blob/master/demo/iphone_nohud.GIF?raw=true
+[4]: https://github.com/anooj1483/rn-progress-loader/blob/master/demo/android_nohud.GIF?raw=true
