@@ -36,7 +36,8 @@ class ProgressLoader extends React.Component {
         barHeight: PropTypes.number,
         color:PropTypes.string,
         hudColor:PropTypes.string,
-        isHUD:PropTypes.bool
+        isHUD:PropTypes.bool,
+        size:PropTypes.number
 
     };
 
@@ -46,7 +47,9 @@ class ProgressLoader extends React.Component {
         barHeight:64,
         color:"#FFFFFF",
         hudColor:'#FFFFFF',
-        isHUD:false
+        isHUD:false,
+        size:60,
+        radius:10
     };
 
 
@@ -58,8 +61,8 @@ class ProgressLoader extends React.Component {
                 animationType={'none'}
                 visible={this.props.visible}
                 onRequestClose={() => {console.log('close modal')}}>
-                <View style={styles.modalBackground}>
-                    <View style={[styles.activityIndicatorWrapper,{backgroundColor:(this.props.isHUD?(this.props.hudColor):("transparent"))}]}>
+                <View style={[styles.modalBackground]}>
+                    <View style={[styles.activityIndicatorWrapper,{width:this.props.size,height:this.props.size},{backgroundColor:(this.props.isHUD?(this.props.hudColor):("transparent"))}]}>
                         {this.renderActivityIndicator()}
                     </View>
                 </View>
@@ -121,8 +124,8 @@ const styles = StyleSheet.create({
     },
     activityIndicatorWrapper: {
         backgroundColor: 'transparent',
-        height: 75,
-        width: 75,
+        height: 60,
+        width: 60,
         borderRadius: 10,
         display: 'flex',
         alignItems: 'center',
