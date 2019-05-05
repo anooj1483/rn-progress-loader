@@ -1,7 +1,7 @@
 # rn-progress-loader
 
 [![npm version](https://badge.fury.io/js/rn-progress-loader.svg)](https://badge.fury.io/js/rn-progress-loader)
-[![GPL License][license-image]][license-url]
+[![MIT License][license-image]][license-url]
 
 The React Native Native iOS and Android progress indicator (spinner) which acts like an overlay. 
 For those who have issues in iPhoneX while using both Modal and ActivityIndicator, you can use normal View with some options.
@@ -46,7 +46,8 @@ class ComponentClass extends React.Component {
         super();
         this.state = {
             visible: false
-        };
+   
+  };
     }
 
     componentDidMount() {
@@ -86,7 +87,7 @@ License
 ----
 GPL
 
-[license-image]: http://img.shields.io/badge/license-GPL-blue.svg?style=flat
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [npm-image]: http://img.shields.io/npm/v/rn-progess-loader.svg?style=flat
 [npm-url]: https://img.shields.io/badge/npm-v1.0-green.svg
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
