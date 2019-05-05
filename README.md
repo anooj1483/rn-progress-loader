@@ -85,7 +85,7 @@ class ComponentClass extends React.Component {
 
 License
 ----
-GPL
+MIT
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [npm-image]: http://img.shields.io/npm/v/rn-progess-loader.svg?style=flat
